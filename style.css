@@ -7,7 +7,7 @@ body {
   font-family: "Open Sans", sans-serif;
   background: #222;
   background-image: url("image.jpg");
-  background-size: 100% 1080px;
+  background-size: cover;
   background-repeat: no-repeat;
   font-size: 120%;
 }
@@ -100,4 +100,15 @@ h1.temp {
 
 .footer .content {
   margin-top: 150px;
+}
+@media only screen and (max-width: 480px) {
+  body {
+    background-image: url("image.jpg");
+    background-size: auto;
+    background-repeat: no-repeat;
+  }
+
+  .container {
+    margin: auto;
+  }
 }
